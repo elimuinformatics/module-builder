@@ -25,6 +25,8 @@ export class Code extends Component<Props> {
         Code: <RIEInput className='editable-text' value={code.code} propName="code" change={this.props.onChange('code')} />
         <br />
         Display: <RIEInput className='editable-text' value={code.display} propName="display" change={this.props.onChange('display')} />
+        <br />
+        Value Set: <RIEInput className='editable-text' value={code.value_set} propName="value_set" change={this.props.onChange('value_set')} />
       </div>
     );
   }
