@@ -10,7 +10,8 @@ import { getTemplate } from '../../templates/Templates';
 type Props = {
   code: CodeType,
   system: string,
-  onChange: any
+  onChange: any,
+  value_set: string
 }
 
 export class Code extends Component<Props> {

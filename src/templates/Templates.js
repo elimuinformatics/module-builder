@@ -62,32 +62,38 @@ const TypeTemplates = {
     Snomed: {
       system: "SNOMED-CT",
       code: "1234",
-      display: "SNOMED Code"
+      display: "SNOMED Code",
+      value_set: "http://snomed.info/sct?fhir_vs=ecl/"
     },
     Loinc: {
       system: "LOINC",
       code: "1234",
-      display: "LOINC Code"
+      display: "LOINC Code",
+      value_set: "http://snomed.info/sct?fhir_vs=ecl/"
     },
     RxNorm: {
       system: "RxNorm",
       code: "1234",
-      display: "RxNorm Code"
+      display: "RxNorm Code",
+      value_set: "http://snomed.info/sct?fhir_vs=ecl/"
     },
     Nubc: {
       system: "NUBC",
       code: "1234",
-      display: "NUBC Code"
+      display: "NUBC Code",
+      value_set: "http://snomed.info/sct?fhir_vs=ecl/"
     },
     DicomDCM: {
       system: "DICOM-DCM",
       code: "XX",
-      display: "DICOM Modality Code"
+      display: "DICOM Modality Code",
+      value_set: "http://snomed.info/sct?fhir_vs=ecl/"
     },
     DicomSOP: {
       system: "DICOM-SOP",
       code: "1.2.3.4.5.6.7.8",
-      display: "DICOM Subject-Object Pair Code"
+      display: "DICOM Subject-Object Pair Code",
+      value_set: "http://snomed.info/sct?fhir_vs=ecl/"
     }
   },
 
