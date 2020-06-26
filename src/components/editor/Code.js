@@ -16,6 +16,16 @@ type Props = {
 
 export class Code extends Component<Props> {
 
+  checkValueSetKey() {
+    if(this.props.code.value_set) {
+      return (
+        <div>
+        Value Set: <RIEInput className='editable-text' value={this.props.code.value_set} propName="value_set" change={this.props.onChange('value_set')} />
+        </div>
+      );
+    }
+  }
+
   render() {
     let code = this.props.code;
     let system = this.props.system;
@@ -26,8 +36,7 @@ export class Code extends Component<Props> {
         Code: <RIEInput className='editable-text' value={code.code} propName="code" change={this.props.onChange('code')} />
         <br />
         Display: <RIEInput className='editable-text' value={code.display} propName="display" change={this.props.onChange('display')} />
-        <br />
-        Value Set: <RIEInput className='editable-text' value={code.value_set} propName="value_set" change={this.props.onChange('value_set')} />
+        {this.checkValueSetKey()}
       </div>
     );
   }
@@ -40,11 +49,8 @@ type CodesProps = {
   onChange: any
 }
 export class Codes extends Component<CodesProps> {
-  render() {
 
-    if(!this.props.codes){
-      return null;
-    }
+  addCode () {
     let system = this.props.system;
     let templates = {
       "SNOMED-CT": getTemplate('Type.Code.Snomed'),
@@ -54,6 +60,27 @@ export class Codes extends Component<CodesProps> {
       "DICOM-DCM": getTemplate('Type.Code.DicomDCM'),
       "DICOM-SOP": getTemplate('Type.Code.DicomSOP')
     };
+    if(this.props.codes[0].value_set) {
+      return (
+        <div>
+          <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
+        </div>
+      );
+    } else {
+        delete templates[system].value_set;
+      return (
+        <div>
+          <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
+        </div>
+      );
+    }
+  }
+  render() {
+
+    if(!this.props.codes){
+      return null;
+    }
+    let system = this.props.system;
     return (
       <div>
         {this.props.codes.map((code, i) => {
@@ -64,7 +91,7 @@ export class Codes extends Component<CodesProps> {
             </div>
           )
         })}
-        <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
+        {this.addCode()}
       </div>
     );
   }
