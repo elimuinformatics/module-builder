@@ -23,6 +23,12 @@ export class Code extends Component<Props> {
         Value Set: <RIEInput className='editable-text' value={this.props.code.value_set} propName="value_set" change={this.props.onChange('value_set')} />
         </div>
       );
+    }else {
+      return (
+        <div>
+        Value Set: <RIEInput className='editable-text' value="" propName="value_set" change={this.props.onChange('value_set')} />
+        </div>
+      );
     }
   }
 
@@ -50,7 +56,8 @@ type CodesProps = {
 }
 export class Codes extends Component<CodesProps> {
 
-  addCode () {
+
+  render() {
     let system = this.props.system;
     let templates = {
       "SNOMED-CT": getTemplate('Type.Code.Snomed'),
@@ -60,27 +67,9 @@ export class Codes extends Component<CodesProps> {
       "DICOM-DCM": getTemplate('Type.Code.DicomDCM'),
       "DICOM-SOP": getTemplate('Type.Code.DicomSOP')
     };
-    if(this.props.codes[0].value_set) {
-      return (
-        <div>
-          <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
-        </div>
-      );
-    } else {
-        delete templates[system].value_set;
-      return (
-        <div>
-          <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
-        </div>
-      );
-    }
-  }
-  render() {
-
     if(!this.props.codes){
       return null;
     }
-    let system = this.props.system;
     return (
       <div>
         {this.props.codes.map((code, i) => {
@@ -91,7 +80,7 @@ export class Codes extends Component<CodesProps> {
             </div>
           )
         })}
-        {this.addCode()}
+            <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
       </div>
     );
   }

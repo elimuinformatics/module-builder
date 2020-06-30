@@ -118,8 +118,7 @@ export default {"allergic_rhinitis":{
         {
           "system": "SNOMED-CT",
           "code": "367498001",
-          "display": "Seasonal allergic rhinitis",
-          "value_set": "http://snomed.info/sct?fhir_vs=ecl/<<404684003:363698007=<<66019005&filter=ilium"
+          "display": "Seasonal allergic rhinitis"
         }
       ],
       "direct_transition": "Allergic_Rhinitis_Diagnosis"
@@ -132,8 +131,7 @@ export default {"allergic_rhinitis":{
         {
           "system": "SNOMED-CT",
           "code": "446096008",
-          "display": "Perennial allergic rhinitis",
-          "value_set": "http://snomed.info/sct?fhir_vs=ecl/<<404684003:363698007=<<66019005&filter=ilium"
+          "display": "Perennial allergic rhinitis"
         }
       ],
       "direct_transition": "Allergic_Rhinitis_Diagnosis"
@@ -146,8 +144,7 @@ export default {"allergic_rhinitis":{
         {
           "system": "SNOMED-CT",
           "code": "232353008",
-          "display": "Perennial allergic rhinitis with seasonal variation",
-          "value_set": "http://snomed.info/sct?fhir_vs=ecl/<<404684003:363698007=<<66019005&filter=ilium"
+          "display": "Perennial allergic rhinitis with seasonal variation"
         }
       ],
       "direct_transition": "Allergic_Rhinitis_Diagnosis"
@@ -160,8 +157,7 @@ export default {"allergic_rhinitis":{
         {
           "system": "SNOMED-CT",
           "code": "185345009",
-          "display": "Encounter for symptom",
-          "value_set": "http://snomed.info/sct?fhir_vs=ecl/<<404684003:363698007=<<66019005&filter=ilium"
+          "display": "Encounter for symptom"
         }
       ],
       "direct_transition": "Allergic_Rhinitis_Symptom1"

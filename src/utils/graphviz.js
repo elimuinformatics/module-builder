@@ -441,7 +441,10 @@ const stateDescription = (state) =>{
 
   if(state.codes !== undefined){
     state['codes'].forEach( code => {
-      details = details + code['system'] + "[" + code['code'] + "]: " + code['display'] + "\\l"
+      if(code['value_set'] === undefined){
+        code['value_set'] = "";
+      }
+      details = details + code['system'] + "[" + code['code'] + "]: " + code['display']  + "\\l" + "Value Set:" + "[" + code['value_set'] +"] " + "\\l"
     })
   }
 
