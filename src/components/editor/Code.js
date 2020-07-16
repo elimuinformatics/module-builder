@@ -80,7 +80,7 @@ export class Codes extends Component<CodesProps> {
             </div>
           )
         })}
-            <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
+        <a className='editable-text' onClick={() => this.props.onChange(`[${this.props.codes.length}]`)({val: {id: _.cloneDeep(templates[system])}})}>+</a>
       </div>
     );
   }
