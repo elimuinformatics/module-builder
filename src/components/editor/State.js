@@ -308,12 +308,12 @@ class SetAttribute extends Component<Props> {
         }
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
         }
 
     }
@@ -441,12 +441,12 @@ class Counter extends Component<Props> {
         }
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
         }
 
     }
@@ -614,12 +614,12 @@ class Encounter extends Component<Props> {
             }
             if (others.length > 0)
             {
-              displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.reason}</label>
+              displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.reason}</label>
               <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
               </span>
             }
             else{
-              displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.reason}</label>
+              displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.reason}</label>
             }
     
         }
@@ -783,12 +783,12 @@ class ConditionOnset extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
         }
 
     }
@@ -909,12 +909,12 @@ class ConditionEnd extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
         }
 
     }
@@ -1041,12 +1041,12 @@ class AllergyOnset extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
         }
 
     }
@@ -1166,12 +1166,12 @@ class AllergyEnd extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
         }
 
     }
@@ -1322,12 +1322,12 @@ class MedicationOrder extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
         }
 
     }
@@ -1639,12 +1639,12 @@ class MedicationEnd extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
         }
 
     }
@@ -1776,12 +1776,12 @@ class CarePlanStart extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
         }
 
     }
@@ -2016,12 +2016,12 @@ class CarePlanEnd extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
         }
 
     }
@@ -2353,12 +2353,12 @@ class Observation extends Component<Props> {
   
           if (others.length > 0)
           {
-            displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
+            displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
             <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
             </span>
           }
           else{
-            displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
+            displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.attribute}</label>
           }
   
       }
@@ -2776,12 +2776,12 @@ class Device extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.assign_to_attribute}</label>
         }
 
     }
@@ -2902,12 +2902,12 @@ class DeviceEnd extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
         }
 
     }
@@ -3112,12 +3112,12 @@ class Death extends Component<Props> {
 
         if (others.length > 0)
         {
-          displayAttribute = <span><label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <span><label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
           <button className="attribute-button" onClick={this.props.displayAttributes}>See other uses</button>
           </span>
         }
         else{
-          displayAttribute = <label class="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
+          displayAttribute = <label className="editable-text" onClick={this.toggleLabel}>{state.referenced_by_attribute}</label>
         }
 
     }

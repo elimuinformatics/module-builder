@@ -78,6 +78,13 @@ npm run deploy
 This updates the `gh-pages` branch on the repository with the new build, and changes will be reflected on the
 site within a few minutes.
 
+# Steps to build module-builder with Docker
+
+To Build Docker image
+docker build -t module-builder .
+
+To run the Docker image
+docker run -p 3001:3000 module-builder
 
 # License
 
