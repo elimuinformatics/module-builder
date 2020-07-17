@@ -685,8 +685,9 @@ const escapeLabel = (label) => {
 
 }
 
-const escapeVerticalBar = (string) => {
-  return string.replace(/\|/g, "\\|");
+const escapeVerticalBar = (inputStr) => {
+  inputStr = inputStr.toString();
+  return inputStr.replace(/\|/g, "\\|")
 };
 
 export const svgDefs = `<defs>
